@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/telegram-alert/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/telegram-alert/static/js/main.b0e38321.chunk.js",
+    "main.js.map": "/telegram-alert/static/js/main.b0e38321.chunk.js.map",
+    "runtime-main.js": "/telegram-alert/static/js/runtime-main.2b282c95.js",
+    "runtime-main.js.map": "/telegram-alert/static/js/runtime-main.2b282c95.js.map",
+    "static/js/2.5f3b7d42.chunk.js": "/telegram-alert/static/js/2.5f3b7d42.chunk.js",
+    "static/js/2.5f3b7d42.chunk.js.map": "/telegram-alert/static/js/2.5f3b7d42.chunk.js.map",
+    "index.html": "/telegram-alert/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/telegram-alert/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.5f3b7d42.chunk.js.LICENSE.txt": "/telegram-alert/static/js/2.5f3b7d42.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b282c95.js",
+    "static/js/2.5f3b7d42.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.b0e38321.chunk.js"
+  ]
+}
