@@ -23,8 +23,9 @@ function Notify() {
                   k++
                 ) {
                   if (
-                    response.data.centers[i].sessions[k].available_capacity !==
-                      0 &&
+                    parseInt(
+                      response.data.centers[i].sessions[k].available_capacity
+                    ) > 1 &&
                     !cookies.get(
                       response.data.centers[i].center_id +
                         "-" +
@@ -92,8 +93,9 @@ CoWin: https://selfregistration.cowin.gov.in `,
                   k++
                 ) {
                   if (
-                    response.data.centers[i].sessions[k].available_capacity !==
-                      0 &&
+                    parseInt(
+                      response.data.centers[i].sessions[k].available_capacity
+                    ) > 1 &&
                     !cookies.get(
                       response.data.centers[i].center_id +
                         "-" +
@@ -126,7 +128,7 @@ CoWin: https://selfregistration.cowin.gov.in `,
                     );
                     axios
                       .post(
-                        "https://api.telegram.org/bot1860148922:AAHdt2gJdjl6kQT15lcxzbM-63ZJRTp4_Ps/sendMessage",
+                        "https://api.telegram.org/bot1812969286:AAE9-qPpYC2qhrzcS-xX7px6AXZ-OhgpQDU/sendMessage",
                         {
                           chat_id: "@c0vidVaccineKannur",
                           text: `*Vaccination center available*
@@ -162,8 +164,9 @@ CoWin: https://selfregistration.cowin.gov.in `,
                   k++
                 ) {
                   if (
-                    response.data.centers[i].sessions[k].available_capacity !==
-                      0 &&
+                    parseInt(
+                      response.data.centers[i].sessions[k].available_capacity
+                    ) > 1 &&
                     !cookies.get(
                       response.data.centers[i].center_id +
                         "-" +
@@ -196,7 +199,7 @@ CoWin: https://selfregistration.cowin.gov.in `,
                     );
                     axios
                       .post(
-                        "https://api.telegram.org/bot1860148922:AAHdt2gJdjl6kQT15lcxzbM-63ZJRTp4_Ps/sendMessage",
+                        "https://api.telegram.org/bot1777558986:AAH9Mu4JpZHuaKtt_RajPQV9sWLN8jW9f4c/sendMessage",
                         {
                           chat_id: "@c0vidVaccineKasaragod",
                           text: `*Vaccination center available*
@@ -232,8 +235,9 @@ CoWin: https://selfregistration.cowin.gov.in `,
                   k++
                 ) {
                   if (
-                    response.data.centers[i].sessions[k].available_capacity !==
-                      0 &&
+                    parseInt(
+                      response.data.centers[i].sessions[k].available_capacity
+                    ) > 1 &&
                     !cookies.get(
                       response.data.centers[i].center_id +
                         "-" +
@@ -266,7 +270,7 @@ CoWin: https://selfregistration.cowin.gov.in `,
                     );
                     axios
                       .post(
-                        "https://api.telegram.org/bot1860148922:AAHdt2gJdjl6kQT15lcxzbM-63ZJRTp4_Ps/sendMessage",
+                        "https://api.telegram.org/bot1764318993:AAH0GePg3Z6y6KFMUwflRqy3nm1Gk8vhJHY/sendMessage",
                         {
                           chat_id: "@c0vidVaccineThrissur",
                           text: `*Vaccination center available*
@@ -302,8 +306,9 @@ CoWin: https://selfregistration.cowin.gov.in `,
                   k++
                 ) {
                   if (
-                    response.data.centers[i].sessions[k].available_capacity !==
-                      0 &&
+                    parseInt(
+                      response.data.centers[i].sessions[k].available_capacity
+                    ) > 1 &&
                     !cookies.get(
                       response.data.centers[i].center_id +
                         "-" +
@@ -336,7 +341,7 @@ CoWin: https://selfregistration.cowin.gov.in `,
                     );
                     axios
                       .post(
-                        "https://api.telegram.org/bot1860148922:AAHdt2gJdjl6kQT15lcxzbM-63ZJRTp4_Ps/sendMessage",
+                        "https://api.telegram.org/bot1812665101:AAEPaOXhSmeYPlghdgIJ540kvn5iMOAGvao/sendMessage",
                         {
                           chat_id: "@c0vidVaccinePalakkad",
                           text: `*Vaccination center available*
@@ -372,8 +377,9 @@ CoWin: https://selfregistration.cowin.gov.in `,
                   k++
                 ) {
                   if (
-                    response.data.centers[i].sessions[k].available_capacity !==
-                      0 &&
+                    parseInt(
+                      response.data.centers[i].sessions[k].available_capacity
+                    ) > 1 &&
                     !cookies.get(
                       response.data.centers[i].center_id +
                         "-" +
@@ -406,7 +412,7 @@ CoWin: https://selfregistration.cowin.gov.in `,
                     );
                     axios
                       .post(
-                        "https://api.telegram.org/bot1860148922:AAHdt2gJdjl6kQT15lcxzbM-63ZJRTp4_Ps/sendMessage",
+                        "https://api.telegram.org/bot1862446972:AAGITDUsIKlOWLnbQdwqR9mk5Y7t-tEgkqA/sendMessage",
                         {
                           chat_id: "@c0vidVaccineMalappuram",
                           text: `*Vaccination center available*
@@ -429,7 +435,7 @@ CoWin: https://selfregistration.cowin.gov.in `,
                 }
               }
             });
-        }, 30000);
+        }, 60000);
         return () => {
           clearInterval(timer);
         };
