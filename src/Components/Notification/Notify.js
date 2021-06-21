@@ -34,9 +34,14 @@ function Notify() {
                         response.data.centers[i].sessions[k].min_age_limit +
                         "-" +
                         response.data.centers[i].sessions[k].vaccine
-                    ) && (!cookies.get("Dont-Send-kozhikode"))
+                    ) &&
+                    !cookies.get("Dont-Send-kozhikode")
                   ) {
-                    cookies.set("Dont-Send-kozhikode", {key:"Dont-Send-kozhikode"}, {path:"/", expires: newDate(Date.now()+30000)});
+                    cookies.set(
+                      "Dont-Send-kozhikode",
+                      { key: "Dont-Send-kozhikode" },
+                      { path: "/", expires: new Date(Date.now() + 45000) }
+                    );
                     cookies.set(
                       response.data.centers[i].center_id +
                         "-" +
@@ -59,7 +64,7 @@ function Notify() {
                     );
                     axios
                       .post(
-                        "https://api.telegram.org/bot1860148922:AAHdt2gJdjl6kQT15lcxzbM-63ZJRTp4_Ps/sendMessage",
+                        "https://api.telegram.org/bot1763445865:AAG_BhUEVlkC4r02uCale9s9oFKYV7RHQPo/sendMessage",
                         {
                           chat_id: "@c0vidVaccine",
                           text: `*Vaccination center available*
@@ -105,9 +110,14 @@ CoWin: https://selfregistration.cowin.gov.in `,
                         response.data.centers[i].sessions[k].min_age_limit +
                         "-" +
                         response.data.centers[i].sessions[k].vaccine
-                    ) && (!cookies.get("Dont-Send-Kannur"))
+                    ) &&
+                    !cookies.get("Dont-Send-Kannur")
                   ) {
-                    cookies.set("Dont-Send-Kannur", {key:"Dont-Send-Kannur"}, {path:"/", expires: newDate(Date.now()+30000)});
+                    cookies.set(
+                      "Dont-Send-Kannur",
+                      { key: "Dont-Send-Kannur" },
+                      { path: "/", expires: new Date(Date.now() + 45000) }
+                    );
                     cookies.set(
                       response.data.centers[i].center_id +
                         "-" +
@@ -177,9 +187,14 @@ CoWin: https://selfregistration.cowin.gov.in `,
                         response.data.centers[i].sessions[k].min_age_limit +
                         "-" +
                         response.data.centers[i].sessions[k].vaccine
-                    ) && (!cookies.get("Dont-Send-Kasaragod"))
+                    ) &&
+                    !cookies.get("Dont-Send-Kasaragod")
                   ) {
-                    cookies.set("Dont-Send-Kasaragod", {key:"Dont-Send-Kasaragod"}, {path:"/", expires: newDate(Date.now()+30000)});
+                    cookies.set(
+                      "Dont-Send-Kasaragod",
+                      { key: "Dont-Send-Kasaragod" },
+                      { path: "/", expires: new Date(Date.now() + 45000) }
+                    );
                     cookies.set(
                       response.data.centers[i].center_id +
                         "-" +
@@ -249,9 +264,14 @@ CoWin: https://selfregistration.cowin.gov.in `,
                         response.data.centers[i].sessions[k].min_age_limit +
                         "-" +
                         response.data.centers[i].sessions[k].vaccine
-                    ) && (!cookies.get("Dont-Send-Thrissur"))
+                    ) &&
+                    !cookies.get("Dont-Send-Thrissur")
                   ) {
-                    cookies.set("Dont-Send-Thrissur", {key:"Dont-Send-Thrissur"}, {path:"/", expires: newDate(Date.now()+30000)});
+                    cookies.set(
+                      "Dont-Send-Thrissur",
+                      { key: "Dont-Send-Thrissur" },
+                      { path: "/", expires: new Date(Date.now() + 45000) }
+                    );
                     cookies.set(
                       response.data.centers[i].center_id +
                         "-" +
@@ -321,9 +341,14 @@ CoWin: https://selfregistration.cowin.gov.in `,
                         response.data.centers[i].sessions[k].min_age_limit +
                         "-" +
                         response.data.centers[i].sessions[k].vaccine
-                    ) && (!cookies.get("Dont-Send-Palakkad"))
+                    ) &&
+                    !cookies.get("Dont-Send-Palakkad")
                   ) {
-                    cookies.set("Dont-Send-Palakkad", {key:"Dont-Send-Palakkad"}, {path:"/", expires: newDate(Date.now()+30000)});
+                    cookies.set(
+                      "Dont-Send-Palakkad",
+                      { key: "Dont-Send-Palakkad" },
+                      { path: "/", expires: new Date(Date.now() + 45000) }
+                    );
                     cookies.set(
                       response.data.centers[i].center_id +
                         "-" +
@@ -393,9 +418,14 @@ CoWin: https://selfregistration.cowin.gov.in `,
                         response.data.centers[i].sessions[k].min_age_limit +
                         "-" +
                         response.data.centers[i].sessions[k].vaccine
-                    ) && (!cookies.get("Dont-Send-Malappuram"))  
+                    ) &&
+                    !cookies.get("Dont-Send-Malappuram")
                   ) {
-                    cookies.set("Dont-Send-Malappuram", {key:"Dont-Send-Malappuram"}, {path:"/", expires: newDate(Date.now()+30000)});
+                    cookies.set(
+                      "Dont-Send-Malappuram",
+                      { key: "Dont-Send-Malappuram" },
+                      { path: "/", expires: new Date(Date.now() + 45000) }
+                    );
                     cookies.set(
                       response.data.centers[i].center_id +
                         "-" +
@@ -441,7 +471,7 @@ CoWin: https://selfregistration.cowin.gov.in `,
                 }
               }
             });
-        }, 30000);
+        }, 45000);
         return () => {
           clearInterval(timer);
         };
